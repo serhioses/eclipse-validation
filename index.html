@@ -5,18 +5,85 @@
         <title>Eclipse</title>
         <link rel="stylesheet" href="style.css" />
         <link rel="shortcut icon" type="image/png" href="jasmine/jasmine_favicon.png">
-        <link rel="stylesheet" type="text/css" href="jasmine/jasmine.css">
+        <!-- <link rel="stylesheet" type="text/css" href="jasmine/jasmine.css"> -->
     </head>
     <body>
         
-        <div id="content">
-            
+        <div class="container">
+            <form id="form" method="POST" data-ev-from>
+                <div class="form-group ev-notice-parent">
+                    <input class="form-field" type="text" name="name" placeholder="Name *" />
+                </div>
+                <div class="form-group ev-notice-parent">
+                    <input class="form-field" type="tel" name="tel" placeholder="Tel *" />
+                </div>
+                <div class="form-group ev-notice-parent">
+                    <input class="form-field" type="email" name="email" placeholder="E-mail *" />
+                </div>
+                <div class="form-group ev-notice-parent">
+                    <input class="form-field" type="password" name="password" placeholder="Password *" />
+                </div>
+                <div class="form-group ev-notice-parent">
+                    <input class="form-field" type="password" name="password_confirm" placeholder="Confirm password *" />
+                </div>
+                <div class="form-group ev-notice-parent">
+                    <input id="license" type="radio" name="license" />
+                    <label class="radio" for="license">Must be checked!!!</label>
+                </div>
+                <div class="form-group ev-notice-parent">
+                    <p>Color</p>
+                    <input id="red" type="checkbox" name="color" />
+                    <label class="checkbox" for="red">Red</label>
+                    <input id="green" type="checkbox" name="color" />
+                    <label class="checkbox" for="green">Green</label>
+                    <input id="blue" type="checkbox" name="color" />
+                    <label class="checkbox" for="blue">Blue</label>
+                </div>
+                <div class="form-group ev-notice-parent">
+                    <p>Number</p>
+                    <input id="one" type="checkbox" name="number" />
+                    <label class="checkbox" for="one">1</label>
+                    <input id="two" type="checkbox" name="number" />
+                    <label class="checkbox" for="two">2</label>
+                    <input id="three" type="checkbox" name="number" />
+                    <label class="checkbox" for="three">3</label>
+                    <input id="four" type="checkbox" name="number" />
+                    <label class="checkbox" for="four">4</label>
+                </div>
+                <div class="form-group ev-notice-parent">
+                    <p>Animal</p>
+                    <select class="select" name="animal">
+                        <option selected="selected" disabled="disabled"></option>
+                        <option value="Dog">Dog</option>
+                        <option value="Cat">Cat</option>
+                        <option value="Bird">Bird</option>
+                    </select>
+                </div>
+                <div class="form-group ev-notice-parent">
+                    <select class="select" name="food">
+                        <option value="unselectable">Choose food</option>
+                        <option value="Salad">Salad</option>
+                        <option value="Pizza">Pizza</option>
+                        <option value="Bread">Bread</option>
+                    </select>
+                </div>
+                <div class="form-group ev-notice-parent">
+                    <select class="select" name="book" multiple="multiple">
+                        <option value="unselectable">Choose books</option>
+                        <option value="The Lord Of The Rings">The Lord Of The Rings</option>
+                        <option value="1984">1984</option>
+                        <option value="Hobbit">Hobbit</option>
+                        <option value="Silmarillion">Silmarillion</option>
+                    </select>
+                </div>
+                <button class="button button--default button--blue" type="submit">Submit</button>
+            </form>
         </div>
 
-        <script type="text/javascript" src="jasmine/jasmine.js"></script>
+        <!-- <script type="text/javascript" src="jasmine/jasmine.js"></script>
         <script type="text/javascript" src="jasmine/jasmine-html.js"></script>
         <script type="text/javascript" src="jasmine/boot.js"></script>
-        <script type="text/javascript" src="jasmine-matchers.js"></script>
+        <script type="text/javascript" src="jasmine-matchers.js"></script> -->
         <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
         <script src="eclipse.js"></script>
         <script src="dist/eclipse-validation.js"></script>
