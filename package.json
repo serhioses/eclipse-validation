@@ -8,9 +8,10 @@
     "webpack": "^2.6.1"
   },
   "dependencies": {
+    "eclipse": "^2.0.1",
     "jquery": "^3.1.1"
   },
-  "description": "",
+  "description": "eclipse-validation plugin for validation forms",
   "keywords": [
     "eclipse",
     "eclipse-validation"
@@ -18,7 +19,10 @@
   "license": "MIT",
   "main": "./dist/eclipse-validation.js",
   "name": "eclipse-validation",
-  "repository": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serhioses/eclipse-validation.git"
+  },
   "scripts": {},
   "version": "1.0.0",
   "author": "Serhiy Miroshnik"

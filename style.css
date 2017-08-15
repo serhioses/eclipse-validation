@@ -197,3 +197,6 @@ input:checked + .radio:after {
 .ev-invalid-item + label {
   color: #F44336;
 }
+.ev-valid-item + label {
+  color: green;
+}

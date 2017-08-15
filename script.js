@@ -11,7 +11,7 @@ $(document).ready(() => {
                 requiredFields: 1
             }
         ],
-        names: ['name', 'tel', 'email', 'password', 'password_confirm', 'license', 'color', 'number', 'animal', 'food', 'book'],
+        names: ['name', 'tel', 'email', 'password', 'password_confirm', 'num', 'license', 'rooms', 'color', 'number', 'animal', 'food', 'book'],
         rules: {
             name: {
                 minLength: 3,
@@ -36,7 +36,14 @@ $(document).ready(() => {
             password_confirm: {
                 pattern: 'string'
             },
+            num: {
+                checkIfChanged: true,
+                pattern: 'number'
+            },
             license: {
+                checked: true
+            },
+            rooms: {
                 checked: true
             },
             color: {

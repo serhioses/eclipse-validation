@@ -1,2 +1,9 @@
 node_modules/
 webpack.config.js
+jasmine/
+expect.js
+index.html
+jasmine-matchers.js
+script.js
+eclipse.js
+style.css

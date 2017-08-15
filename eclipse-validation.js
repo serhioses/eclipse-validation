@@ -1,5 +1,7 @@
 'use strict';
 
+import eclipse from 'eclipse';
+
 import Validation from './lib/validate';
 import * as notice from './lib/notice';
 
