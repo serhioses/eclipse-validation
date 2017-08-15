@@ -1,1 +1,1 @@
-Serhiy Miroshnik UI tools
+Serhiy Miroshnik's eclipse-validation plugin
