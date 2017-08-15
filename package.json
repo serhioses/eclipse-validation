@@ -24,6 +24,6 @@
     "url": "git+https://github.com/serhioses/eclipse-validation.git"
   },
   "scripts": {},
-  "version": "1.0.1",
+  "version": "1.0.3",
   "author": "Serhiy Miroshnik"
 }
