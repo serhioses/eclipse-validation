@@ -109,6 +109,7 @@ $(document).ready(() => {
         }
     });
     $('body').on('submit', '#form', function (e) {
+        // e.preventDefault();
         eclipse.forms.Validation.delegateSubmit(e)
         // v.validate(e);
 

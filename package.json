@@ -8,7 +8,7 @@
     "webpack": "^2.6.1"
   },
   "dependencies": {
-    "eclipse": "^2.0.1",
+    "eclipse": "^2.0.2",
     "jquery": "^3.1.1"
   },
   "description": "eclipse-validation plugin for validation forms",
@@ -24,6 +24,6 @@
     "url": "git+https://github.com/serhioses/eclipse-validation.git"
   },
   "scripts": {},
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Serhiy Miroshnik"
 }
