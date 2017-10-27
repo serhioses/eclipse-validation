@@ -17,7 +17,8 @@ $(document).ready(() => {
                 minLength: 3,
                 maxLength: 6,
                 pattern: 'string',
-                group: 0
+                group: 0,
+                checkIfChanged: true
             },
             tel: {
                 minLength: 1,
@@ -108,13 +109,16 @@ $(document).ready(() => {
             }
         }
     });
-    $('body').on('submit', '#form', function (e) {
-        // e.preventDefault();
-        eclipse.forms.Validation.delegateSubmit(e)
-        // v.validate(e);
+    // $('body').on('submit', '#form', function (e) {
+    //     // e.preventDefault();
+    //     eclipse.forms.Validation.delegateSubmit(e)
+    //     // v.validate(e);
 
-    });
+    // });
     // $(':input').blur(function (e) {
     //     v.validate(e);
     // });
+    $(':input').on('blur', function (e) {
+        v.validateField(e, $(this));
+    });
 });
