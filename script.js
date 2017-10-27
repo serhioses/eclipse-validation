@@ -109,16 +109,19 @@ $(document).ready(() => {
             }
         }
     });
-    // $('body').on('submit', '#form', function (e) {
-    //     // e.preventDefault();
-    //     eclipse.forms.Validation.delegateSubmit(e)
-    //     // v.validate(e);
+    $('body').on('submit', '#form', function (e) {
+        // e.preventDefault();
+        eclipse.forms.Validation.delegateSubmit(e)
+        // v.validate(e);
 
-    // });
+    });
     // $(':input').blur(function (e) {
     //     v.validate(e);
     // });
-    $(':input').on('blur', function (e) {
-        v.validateField(e, $(this));
+    // $(':input:not(button[type="submit"])').on('blur', function (e) {
+    //     v.validateField(e, $(this));
+    // });
+    $('[name="name"], [name="tel"], [name="email"]').on('blur', function (e) {
+        v.validateGroupField(e, $(this), 0);
     });
 });
