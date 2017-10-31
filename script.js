@@ -17,6 +17,7 @@ $(document).ready(() => {
                 minLength: 3,
                 maxLength: 6,
                 pattern: 'string',
+                empty: 1,
                 group: 0,
                 checkIfChanged: true
             },
@@ -76,7 +77,8 @@ $(document).ready(() => {
             name: {
                 minLength: 'Минимальная длина имени 3 символа',
                 maxLength: 'Максимальная длина имени 6 символов',
-                pattern: 'Введите корректный формат имени'
+                pattern: 'Введите корректный формат имени',
+                empty: 'Required'
             },
             tel: {
                 minLength: 'Минимальная длина телефона 1 символ',
@@ -124,10 +126,13 @@ $(document).ready(() => {
     // $(':input:not(button[type="submit"])').on('blur', function (e) {
     //     v.validateField(e, $(this));
     // });
-    // $('[name="name"], [name="tel"], [name="email"]').on('blur', function (e) {
+    // $('[name="name"], [name="tel"], [name="email"]').on('change', function (e) {
     //     v.validateGroupField(e, $(this), 0);
     // });
-    $('[name="number"]').on('change', function (e) {
+    $('[name="name"], [name="tel"], [name="email"]').on('input', function (e) {
         v.validateField(e, $(this));
     });
+    // $('[name="number"]').on('change', function (e) {
+    //     v.validateField(e, $(this));
+    // });
 });
