@@ -39,7 +39,7 @@ $(document).ready(() => {
             },
             num: {
                 checkIfChanged: true,
-                pattern: 'number'
+                pattern: 'hardNumber'
             },
             license: {
                 checked: true
@@ -86,6 +86,9 @@ $(document).ready(() => {
             email: {
                 pattern: 'Введите корректный формат e-mail (example@mail.com)'
             },
+            num: {
+                pattern: 'Must be number!!!'
+            },
             license: {
                 checked: 'Это поле должно быть обязательно отмечено'
             },
@@ -121,7 +124,10 @@ $(document).ready(() => {
     // $(':input:not(button[type="submit"])').on('blur', function (e) {
     //     v.validateField(e, $(this));
     // });
-    $('[name="name"], [name="tel"], [name="email"]').on('blur', function (e) {
-        v.validateGroupField(e, $(this), 0);
+    // $('[name="name"], [name="tel"], [name="email"]').on('blur', function (e) {
+    //     v.validateGroupField(e, $(this), 0);
+    // });
+    $('[name="number"]').on('change', function (e) {
+        v.validateField(e, $(this));
     });
 });
